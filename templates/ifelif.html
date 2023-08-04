@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_elif</title>
+</head>
+<body>
+    <center>
+        <h1> This is if_elif page</h1>
+
+        {% if age < 18 %}
+            <h1>This is if Block</h1>
+            <h1>Your age {{age}} is less than 18. Your are not eligible for vote. </h1>
+        
+        {% elif age == 18 %}
+            <h1>This is elif Block</h1>
+            <h1>Your age {{age}} is equal to 18. Your are eligible for vote.</h1>
+        
+        {% else %}
+            <h1>This is else Block</h1>
+            <h1>Your age  {{age}} is Greatest than 18. Your are eligible for vote.</h1>
+        
+        {% endif %}
+    </center>
+</body>
+</html>

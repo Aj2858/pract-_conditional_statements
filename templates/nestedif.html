@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nestedif </title>
+</head>
+<body>
+    <center>
+        <h1>This is Nested if Conditional</h1>
+
+        {% if a > b %}
+            {% if a > c %}
+                <h1>This is if Block</h1>
+                <h1> {{a}} is Greatest </h1>
+            
+            {% else %}
+                <h1>This is else Block</h1>
+                <h1>{{c}} is Greatest</h1>
+            
+            {% endif %}
+        
+        {% else %}
+            {% if b > c %}
+                <h1>This is else-if Block</h1>
+                <h1>{{b}} is Greatest</h1>
+            
+            {% else %}
+                <h1>This is else-else Block</h1>
+                <h1>{{c}} is Greatest</h1>
+            
+            {% endif %}
+
+        
+        {% endif %}
+    
+        <h1><a href="{% url 'app:forloop' %}">click here to go for forloop pages</a></h1>
+    </center>
+</body>
+</html>
